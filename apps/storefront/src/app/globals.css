@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-parchment: #F7F1E5;
+  --color-ink: #171412;
+  --color-walnut: #3B2A1F;
+  --color-vermilion: #B73A2F;
+  --color-gold: #C9A45C;
+  --color-cream: #FFF9EF;
+  --color-sand: #E7D8C3;
+}
+
+body {
+  background: #F7F1E5;
+  color: #171412;
+  font-family: var(--font-lora), Georgia, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair), Georgia, serif;
+}
