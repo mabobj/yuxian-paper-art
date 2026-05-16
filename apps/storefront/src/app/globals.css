@@ -1,21 +1,27 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-parchment: #F7F1E5;
-  --color-ink: #171412;
-  --color-walnut: #3B2A1F;
-  --color-vermilion: #B73A2F;
-  --color-gold: #C9A45C;
-  --color-cream: #FFF9EF;
-  --color-sand: #E7D8C3;
+  --color-brand-bg: #F7F1E5;
+  --color-brand-text: #171412;
+  --color-brand-brown: #3B2A1F;
+  --color-brand-red: #9F1D1D;
+  --color-brand-red-alt: #B73A2F;
+  --color-brand-gold: #C9A45C;
+  --color-brand-card: #FFF9EF;
+  --color-brand-border: #E7D8C3;
+  --color-brand-muted: #6A5A49;
+  --color-brand-footer: #8F1717;
+  --color-brand-wood: #6B3F1D;
+  --font-heading: Georgia, "Times New Roman", serif;
+  --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 body {
   background: #F7F1E5;
   color: #171412;
-  font-family: var(--font-lora), Georgia, serif;
+  font-family: var(--font-body);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-playfair), Georgia, serif;
+  font-family: var(--font-heading);
 }

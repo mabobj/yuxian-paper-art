@@ -1,0 +1,30 @@
+// 可供 Trae 参考的 Tailwind 主题变量（示意，不要求逐字照抄）
+extend: {
+  colors: {
+    brand: {
+      bg: '#F7F1E5',
+      text: '#171412',
+      brown: '#3B2A1F',
+      red: '#9F1D1D',
+      redAlt: '#B73A2F',
+      gold: '#C9A45C',
+      card: '#FFF9EF',
+      border: '#E7D8C3',
+      muted: '#6A5A49',
+      footer: '#8F1717',
+      wood: '#6B3F1D'
+    }
+  },
+  boxShadow: {
+    card: '0 6px 18px rgba(59, 42, 31, 0.08)',
+    soft: '0 12px 30px rgba(59, 42, 31, 0.10)'
+  },
+  borderRadius: {
+    md: '12px',
+    lg: '16px'
+  },
+  fontFamily: {
+    heading: ['Georgia', 'Times New Roman', 'serif'],
+    body: ['system-ui', 'Segoe UI', 'sans-serif']
+  }
+}

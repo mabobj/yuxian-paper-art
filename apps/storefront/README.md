@@ -15,19 +15,19 @@ Red Window Art is a cross-border e-commerce brand offering handcrafted Yuxian pa
 - **Framework**: Next.js 16 (App Router)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS 4
-- **Fonts**: Playfair Display (headings), Lora (body)
-- **Icons**: Lucide React
+- **Fonts**: Georgia (headings), system-ui (body)
+- **Icons**: Lucide React + design SVG assets
 - **Data**: Local mock products (current phase)
 
 ## Pages
 
 | Route | Page |
 |---|---|
-| `/` | Homepage — Hero, Featured Collections, Choose by Meaning, Craft Story, Gifts, Featured Artworks, Trust Bar, Newsletter |
+| `/` | Homepage — 10 modules aligned to Red Window Art design reference |
 | `/products` | Artwork listing with grid layout |
-| `/products/[slug]` | Artwork detail with craft narrative, cultural story, dimensions, materials |
-| `/blessings` | Shop by blessing meaning — Prosperity, Love, Protection, Health, Harmony, Joy |
-| `/story` | Our Story — the heritage and craft of Yuxian paper-cutting |
+| `/products/[slug]` | Artwork detail with craft narrative, cultural story |
+| `/blessings` | Shop by blessing meaning |
+| `/story` | Our Story — heritage and craft of Yuxian paper-cutting |
 | `/journal` | Cultural stories, artisan spotlights, gift inspiration |
 | `/about` | About the brand, mission, and curation philosophy |
 | `/contact` | Contact form, wholesale and gift concierge |
@@ -45,12 +45,15 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Current Status
 
-**Task Pack 01.5 — Brand Foundation & Homepage Visual Finalization**: Complete.
+**Task Pack 04 — Homepage High-Fidelity Implementation**: Complete.
 
-- Brand repositioned to "Red Window Art"
-- Meaning-driven navigation: Shop, Gifts, Home Decor, Blessings, Our Story, Journal
-- Homepage restructured around user purchase motivations (meaning, gifting, home decor)
-- Brand foundation documented in `docs/10-brand-foundation-red-window-art.md`
+- Homepage visual baseline aligned to Red Window Art design reference
+- 10 modules implemented in order: Header → Hero → Featured Collections → Choose by Meaning → Craft Story → Meaningful Gifts → Featured Artworks → Trust Bar → Newsletter → Footer
+- Hero features CSS/SVG home scene (framed paper-cut on wall, wooden cabinet, vase with branches, warm lighting, window shadows)
+- Design SVG assets integrated: logo, navigation icons, meaning icons, trust icons
+- Color system updated per design tokens: `#9F1D1D` brand red, `#8F1717` footer red, `#6B3F1D` wood tone
+- Fonts changed to Georgia (headings) + system-ui (body)
+- Container width: `min(1180px, calc(100% - 48px))`
 - Medusa backend is **not yet connected**
 - No real payment integration
 
@@ -82,10 +85,14 @@ apps/storefront/src/
 
 | Token | Value | Usage |
 |---|---|---|
-| Parchment | `#F7F1E5` | Page background |
-| Ink | `#171412` | Primary text |
-| Walnut | `#3B2A1F` | Secondary text, navigation |
-| Vermilion | `#B73A2F` | CTAs, accents, hero emphasis |
+| Background | `#F7F1E5` | Page background |
+| Text | `#171412` | Primary text |
+| Brown | `#3B2A1F` | Secondary text, navigation |
+| Brand Red | `#9F1D1D` | CTAs, logo, hero emphasis |
+| Accent Red | `#B73A2F` | Hover states, secondary accents |
 | Gold | `#C9A45C` | Borders, labels, decorative |
-| Cream | `#FFF9EF` | Card backgrounds |
-| Sand | `#E7D8C3` | Borders, dividers |
+| Card | `#FFF9EF` | Card backgrounds |
+| Border | `#E7D8C3` | Borders, dividers |
+| Muted | `#6A5A49` | Secondary text |
+| Footer Red | `#8F1717` | Newsletter band, footer accents |
+| Wood | `#6B3F1D` | Wood furniture in Hero scene |

@@ -1,0 +1,40 @@
+{
+  "brand": {
+    "displayName": "Red Window Art",
+    "repositoryName": "yuxian-paper-art",
+    "subtitle": "Chinese Heritage Paper-Cut Art for Home & Gifting",
+    "positioning": "Meaningful Chinese Heritage Art for Home, Gifting, and Blessing"
+  },
+  "colors": {
+    "bg": "#F7F1E5",
+    "text": "#171412",
+    "brown": "#3B2A1F",
+    "brandRed": "#9F1D1D",
+    "accentRed": "#B73A2F",
+    "gold": "#C9A45C",
+    "card": "#FFF9EF",
+    "border": "#E7D8C3",
+    "muted": "#6A5A49",
+    "footerRed": "#8F1717",
+    "wood": "#6B3F1D"
+  },
+  "fonts": {
+    "heading": "Georgia, 'Times New Roman', serif",
+    "body": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+  },
+  "radius": {
+    "sm": "8px",
+    "md": "12px",
+    "lg": "16px"
+  },
+  "shadow": {
+    "card": "0 6px 18px rgba(59, 42, 31, 0.08)",
+    "soft": "0 12px 30px rgba(59, 42, 31, 0.10)"
+  },
+  "layout": {
+    "container": "min(1180px, calc(100% - 48px))",
+    "desktopHeroMinHeight": "560px",
+    "sectionGap": "56px",
+    "cardGap": "20px"
+  }
+}

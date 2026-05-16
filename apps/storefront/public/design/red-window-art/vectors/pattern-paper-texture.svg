@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#F7F1E5"/>
+  <g opacity="0.15" stroke="#DCCFBF" stroke-width="1">
+    <path d="M20 40c40 20 80-10 120 12s80 6 140 10 70 30 100 34"/>
+    <path d="M0 90c70 20 100-15 170 4s95 11 140 20"/>
+    <path d="M30 155c40-8 60 14 103 14s85-20 120-6 54 18 90 12"/>
+    <path d="M10 220c30-14 68-2 100 0s65-6 110 8 80 8 150 10"/>
+  </g>
+</svg>

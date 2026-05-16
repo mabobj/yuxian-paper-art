@@ -1,25 +1,25 @@
-import { ShieldCheck, Globe, Package, Scissors } from "lucide-react"
+import Image from "next/image"
 
 const TRUST_ITEMS = [
   {
-    icon: ShieldCheck,
+    icon: "trust-secure-payment",
     title: "Secure Payment",
-    description: "Encrypted checkout",
+    description: "Shop with confidence",
   },
   {
-    icon: Globe,
+    icon: "trust-worldwide-shipping",
     title: "Worldwide Shipping",
-    description: "Delivered with care",
+    description: "Delivered to your door",
   },
   {
-    icon: Package,
+    icon: "trust-carefully-packaged",
     title: "Carefully Packaged",
-    description: "Gift-ready presentation",
+    description: "Gift-ready packaging",
   },
   {
-    icon: Scissors,
+    icon: "trust-handmade-heritage",
     title: "Handmade Heritage",
-    description: "UNESCO-recognized craft",
+    description: "Authentic & meaningful",
   },
 ]
 
@@ -29,15 +29,19 @@ export default function TrustBar() {
       {TRUST_ITEMS.map((item) => (
         <div
           key={item.title}
-          className="flex flex-col items-center text-center p-6"
+          className="flex flex-col items-center text-center p-5"
         >
-          <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gold/20 bg-cream mb-3">
-            <item.icon className="h-4 w-4 text-gold" />
-          </div>
-          <h3 className="font-[family-name:var(--font-playfair)] text-sm font-semibold text-ink">
+          <Image
+            src={`/design/red-window-art/vectors/${item.icon}.svg`}
+            alt=""
+            width={28}
+            height={28}
+            className="w-7 h-7 mb-3 opacity-60"
+          />
+          <h3 className="font-[family-name:var(--font-heading)] text-sm font-semibold text-brand-text">
             {item.title}
           </h3>
-          <p className="text-xs text-walnut/50 mt-1">{item.description}</p>
+          <p className="text-xs text-brand-muted mt-1">{item.description}</p>
         </div>
       ))}
     </div>
