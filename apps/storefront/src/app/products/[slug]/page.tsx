@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = getProductBySlug(slug)
   if (!product) return { title: "Product Not Found" }
   return {
-    title: `${product.name} | Yuxian Paper Art`,
+    title: `${product.name} | Red Window Art`,
     description: product.shortDescription,
   }
 }

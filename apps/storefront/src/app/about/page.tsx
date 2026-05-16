@@ -4,7 +4,7 @@ import Footer from "@/components/Footer"
 import Container from "@/components/Container"
 
 export const metadata: Metadata = {
-  title: "About Us | Yuxian Paper Art",
+  title: "About Us | Red Window Art",
   description:
     "Learn about our mission to bring Chinese paper-cut heritage to homes around the world.",
 }

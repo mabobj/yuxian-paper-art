@@ -5,7 +5,7 @@ import Container from "@/components/Container"
 import Button from "@/components/Button"
 
 export const metadata: Metadata = {
-  title: "Our Story | Yuxian Paper Art",
+  title: "Our Story | Red Window Art",
   description:
     "Discover the centuries-old tradition of Yuxian paper-cutting — a living heritage craft recognized by UNESCO.",
 }

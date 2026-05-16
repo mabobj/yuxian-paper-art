@@ -2,20 +2,22 @@ import Link from "next/link"
 
 const FOOTER_LINKS = {
   Shop: [
-    { href: "/products", label: "All Products" },
+    { href: "/products", label: "All Artworks" },
     { href: "/products", label: "Wall Art" },
-    { href: "/products", label: "Wedding Gifts" },
-    { href: "/products", label: "Zodiac Collection" },
+    { href: "/products", label: "Gifts" },
+    { href: "/products", label: "Home Decor" },
   ],
-  About: [
+  "Shop by Meaning": [
+    { href: "/blessings", label: "Prosperity" },
+    { href: "/blessings", label: "Love & Harmony" },
+    { href: "/blessings", label: "Health & Protection" },
+    { href: "/blessings", label: "Joy & Celebration" },
+  ],
+  Explore: [
     { href: "/story", label: "Our Story" },
+    { href: "/journal", label: "Journal" },
     { href: "/about", label: "About Us" },
     { href: "/contact", label: "Contact" },
-  ],
-  Support: [
-    { href: "/contact", label: "FAQ" },
-    { href: "/contact", label: "Shipping" },
-    { href: "/contact", label: "Wholesale" },
   ],
 }
 
@@ -29,11 +31,10 @@ export default function Footer() {
               href="/"
               className="font-[family-name:var(--font-playfair)] text-lg font-semibold tracking-wide text-ink"
             >
-              Yuxian Paper Art
+              Red Window Art
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-walnut/70">
-              Handcrafted Chinese paper-cut heritage for meaningful gifts and
-              modern interiors.
+              Chinese Heritage Paper-Cut Art for Home & Gifting.
             </p>
           </div>
 
@@ -60,7 +61,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-sand">
           <p className="text-xs text-walnut/50 text-center">
-            &copy; {new Date().getFullYear()} Yuxian Paper Art. All rights
+            &copy; {new Date().getFullYear()} Red Window Art. All rights
             reserved.
           </p>
         </div>

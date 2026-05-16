@@ -6,7 +6,7 @@ import Button from "@/components/Button"
 import { Mail, Package, Gift } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Contact | Yuxian Paper Art",
+  title: "Contact | Red Window Art",
   description:
     "Get in touch with Yuxian Paper Art for inquiries, wholesale, gift concierge, or customer support.",
 }

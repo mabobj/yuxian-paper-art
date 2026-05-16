@@ -1,10 +1,14 @@
-# Yuxian Paper Art — Storefront
+# Red Window Art — Storefront
 
-A handcrafted Chinese paper-cut heritage brand storefront built with Next.js.
+**Chinese Heritage Paper-Cut Art for Home & Gifting**
+
+A premium e-commerce brand bringing Yuxian paper-cutting — a UNESCO-recognized Intangible Cultural Heritage — to homes around the world.
+
+GitHub repository: `yuxian-paper-art`
 
 ## About
 
-Yuxian Paper Art is a cross-border e-commerce brand bringing Yuxian paper-cutting — a UNESCO-recognized Intangible Cultural Heritage — to homes around the world. This is the custom Next.js storefront for the brand.
+Red Window Art is a cross-border e-commerce brand offering handcrafted Yuxian paper-cut artworks for modern homes, meaningful gifts, and blessings that carry cultural stories. This is the custom Next.js storefront.
 
 ## Tech Stack
 
@@ -13,62 +17,61 @@ Yuxian Paper Art is a cross-border e-commerce brand bringing Yuxian paper-cuttin
 - **Styling**: Tailwind CSS 4
 - **Fonts**: Playfair Display (headings), Lora (body)
 - **Icons**: Lucide React
-- **Data**: Local mock products (Phase 1)
+- **Data**: Local mock products (current phase)
 
 ## Pages
 
 | Route | Page |
 |---|---|
-| `/` | Homepage with Hero, Brand Values, Featured Products, Craft Story, Gift Occasions |
-| `/products` | Product listing with grid layout |
-| `/products/[slug]` | Product detail with craft narrative, dimensions, materials, and cultural story |
-| `/story` | Brand story — the heritage and craft of Yuxian paper-cutting |
-| `/about` | About the brand, mission, and product selection philosophy |
-| `/contact` | Contact form UI, wholesale and gift concierge information |
-| `/cart` | Shopping cart static UI with order summary |
-| `/checkout` | Checkout placeholder — full integration coming in next phase |
+| `/` | Homepage — Hero, Featured Collections, Choose by Meaning, Craft Story, Gifts, Featured Artworks, Trust Bar, Newsletter |
+| `/products` | Artwork listing with grid layout |
+| `/products/[slug]` | Artwork detail with craft narrative, cultural story, dimensions, materials |
+| `/blessings` | Shop by blessing meaning — Prosperity, Love, Protection, Health, Harmony, Joy |
+| `/story` | Our Story — the heritage and craft of Yuxian paper-cutting |
+| `/journal` | Cultural stories, artisan spotlights, gift inspiration |
+| `/about` | About the brand, mission, and curation philosophy |
+| `/contact` | Contact form, wholesale and gift concierge |
+| `/cart` | Shopping cart static UI |
+| `/checkout` | Checkout placeholder |
 
 ## Getting Started
 
 ```bash
-# Install dependencies
 npm install
-
-# Start development server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000).
 
 ## Current Status
 
-**Phase 1 — Storefront Static MVP**: Complete.
+**Task Pack 01.5 — Brand Foundation & Homepage Visual Finalization**: Complete.
 
-- All 8 pages are built with responsive layouts
-- Mock product data (6 products) in `src/data/products.ts`
-- Visual system aligned with premium oriental paper art aesthetic
-- Medusa backend is **not yet connected** — all product data is local mock
+- Brand repositioned to "Red Window Art"
+- Meaning-driven navigation: Shop, Gifts, Home Decor, Blessings, Our Story, Journal
+- Homepage restructured around user purchase motivations (meaning, gifting, home decor)
+- Brand foundation documented in `docs/10-brand-foundation-red-window-art.md`
+- Medusa backend is **not yet connected**
 - No real payment integration
 
 ## Next Steps
 
-Phase 2 will initialize the Medusa commerce backend with PostgreSQL and Redis. Phase 3 will connect this storefront to Medusa's Store API with mock fallback support.
+Phase 2 will initialize the Medusa commerce backend with PostgreSQL and Redis.
 
 ## Project Structure
 
 ```
 apps/storefront/src/
 ├── app/                  # App Router pages
-│   ├── page.tsx          # Homepage
-│   ├── products/
-│   │   ├── page.tsx      # Product listing
-│   │   └── [slug]/
-│   │       └── page.tsx  # Product detail
-│   ├── story/page.tsx    # Brand story
-│   ├── about/page.tsx    # About us
-│   ├── contact/page.tsx  # Contact
-│   ├── cart/page.tsx     # Shopping cart
-│   └── checkout/page.tsx # Checkout placeholder
+│   ├── page.tsx          # Homepage (10 modules)
+│   ├── products/         # Artwork listing & detail
+│   ├── blessings/        # Shop by meaning
+│   ├── story/            # Our Story
+│   ├── journal/          # Cultural content
+│   ├── about/            # About us
+│   ├── contact/          # Contact
+│   ├── cart/             # Shopping cart
+│   └── checkout/         # Checkout placeholder
 ├── components/           # Reusable UI components
 ├── data/products.ts      # Mock product data
 ├── types/product.ts      # TypeScript type definitions
@@ -82,7 +85,7 @@ apps/storefront/src/
 | Parchment | `#F7F1E5` | Page background |
 | Ink | `#171412` | Primary text |
 | Walnut | `#3B2A1F` | Secondary text, navigation |
-| Vermilion | `#B73A2F` | CTAs, accents |
+| Vermilion | `#B73A2F` | CTAs, accents, hero emphasis |
 | Gold | `#C9A45C` | Borders, labels, decorative |
 | Cream | `#FFF9EF` | Card backgrounds |
 | Sand | `#E7D8C3` | Borders, dividers |

@@ -8,7 +8,7 @@ import Button from "@/components/Button"
 import { products } from "@/data/products"
 
 export const metadata: Metadata = {
-  title: "Shop | Yuxian Paper Art",
+  title: "Shop | Red Window Art",
   description:
     "Browse our collection of handcrafted Yuxian paper-cut artworks — wall art, wedding gifts, zodiac pieces, and more.",
 }

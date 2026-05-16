@@ -1,11 +1,13 @@
 import Link from "next/link"
-import { ShoppingBag, Menu, X } from "lucide-react"
+import { ShoppingBag } from "lucide-react"
 
 const NAV_LINKS = [
   { href: "/products", label: "Shop" },
-  { href: "/story", label: "Story" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
+  { href: "/products", label: "Gifts" },
+  { href: "/products", label: "Home Decor" },
+  { href: "/blessings", label: "Blessings" },
+  { href: "/story", label: "Our Story" },
+  { href: "/journal", label: "Journal" },
 ]
 
 export default function Header() {
@@ -17,13 +19,13 @@ export default function Header() {
             href="/"
             className="font-[family-name:var(--font-playfair)] text-lg font-semibold tracking-wide text-ink hover:text-walnut transition-colors"
           >
-            Yuxian Paper Art
+            Red Window Art
           </Link>
 
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
             {NAV_LINKS.map((link) => (
               <Link
-                key={link.href}
+                key={link.label}
                 href={link.href}
                 className="text-sm tracking-wide text-walnut/80 hover:text-ink transition-colors"
               >
@@ -40,12 +42,6 @@ export default function Header() {
             >
               <ShoppingBag className="h-5 w-5" />
             </Link>
-            <button
-              className="md:hidden p-2 text-walnut hover:text-ink transition-colors"
-              aria-label="Toggle menu"
-            >
-              <Menu className="h-5 w-5" />
-            </button>
           </div>
         </div>
       </div>

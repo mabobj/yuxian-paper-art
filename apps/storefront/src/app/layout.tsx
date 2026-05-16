@@ -15,13 +15,13 @@ const lora = Lora({
 })
 
 export const metadata: Metadata = {
-  title: "Yuxian Paper Art | Handcrafted Chinese Paper-Cut Heritage",
+  title: "Red Window Art | Chinese Heritage Paper-Cut Art for Home & Gifting",
   description:
-    "Discover handcrafted Yuxian paper-cut artworks for meaningful gifts and modern interiors.",
+    "Handcrafted Yuxian paper-cut artworks for modern homes, meaningful gifts, and blessings that carry cultural stories.",
   openGraph: {
-    title: "Yuxian Paper Art | Handcrafted Chinese Paper-Cut Heritage",
+    title: "Red Window Art | Chinese Heritage Paper-Cut Art for Home & Gifting",
     description:
-      "Discover handcrafted Yuxian paper-cut artworks for meaningful gifts and modern interiors.",
+      "Handcrafted Yuxian paper-cut artworks for modern homes, meaningful gifts, and blessings that carry cultural stories.",
     type: "website",
   },
 }

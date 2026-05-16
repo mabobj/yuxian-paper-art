@@ -5,7 +5,7 @@ import Container from "@/components/Container"
 import { Package, CreditCard, CheckCircle, User, Truck } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Checkout | Yuxian Paper Art",
+  title: "Checkout | Red Window Art",
   description: "Complete your purchase.",
 }
 

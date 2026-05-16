@@ -9,7 +9,7 @@ import { products } from "@/data/products"
 import { formatPrice } from "@/lib/utils"
 
 export const metadata: Metadata = {
-  title: "Shopping Cart | Yuxian Paper Art",
+  title: "Shopping Cart | Red Window Art",
   description: "Review the items in your shopping cart.",
 }
 
