@@ -3,14 +3,14 @@ import Image from "next/image"
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-brand-bg flex items-center" style={{ height: "430px" }}>
+    <section className="relative overflow-hidden bg-brand-bg flex items-center" style={{ height: "460px" }}>
       <div
         className="mx-auto grid lg:grid-cols-[42%_58%] gap-0 items-center h-full"
-        style={{ maxWidth: "1180px", width: "calc(100% - 48px)" }}
+        style={{ maxWidth: "1320px", width: "calc(100% - 56px)" }}
       >
         <div className="max-w-lg py-8 relative">
           <Image
-            src="/design/red-window-art/vectors/pattern-floral-corner.svg"
+            src="/design/red-window-art/pattern-floral-corner.svg"
             alt=""
             width={200}
             height={200}
@@ -42,12 +42,12 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="relative h-full hidden lg:block">
+        <div className="relative h-full hidden lg:block overflow-hidden">
           <Image
-            src="/design/red-window-art/hero-scene.png"
+            src="/design/red-window-art/hero-scene-right-focused.png"
             alt="Red Window Art — paper-cut artwork in a warm modern home setting"
             fill
-            className="object-cover object-center"
+            className="object-cover"
             priority
             sizes="58vw"
           />

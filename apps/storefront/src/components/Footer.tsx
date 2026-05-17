@@ -25,10 +25,10 @@ export default function Footer() {
   return (
     <footer className="border-t border-brand-border bg-brand-card">
       <div
-        className="mx-auto px-6 lg:px-8 py-14"
-        style={{ maxWidth: "min(1180px, calc(100% - 48px))" }}
+        className="mx-auto px-6 lg:px-8"
+        style={{ maxWidth: "1200px", width: "calc(100% - 56px)", paddingTop: "48px", paddingBottom: "48px" }}
       >
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div>
             <Link
               href="/"
@@ -46,7 +46,7 @@ export default function Footer() {
               <h3 className="font-[family-name:var(--font-heading)] text-sm font-semibold tracking-wide text-brand-text mb-4">
                 {title}
               </h3>
-              <ul className="space-y-2.5">
+              <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link.label}>
                     <Link

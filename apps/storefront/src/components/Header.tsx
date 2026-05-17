@@ -15,11 +15,11 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white/98 backdrop-blur-sm border-b border-brand-border">
       <div
         className="mx-auto flex items-center justify-between h-16"
-        style={{ maxWidth: "1180px", width: "calc(100% - 48px)" }}
+        style={{ maxWidth: "1200px", width: "calc(100% - 56px)" }}
       >
         <Link href="/" className="flex items-center gap-3 shrink-0">
           <Image
-            src="/design/red-window-art/vectors/logo-seal-red-window-art.svg"
+            src="/design/red-window-art/logo-seal-red-window-art.svg"
             alt="Red Window Art"
             width={40}
             height={40}
@@ -42,7 +42,7 @@ export default function Header() {
               {link.label}
               {link.hasDropdown && (
                 <Image
-                  src="/design/red-window-art/vectors/icon-chevron-down.svg"
+                  src="/design/red-window-art/icon-chevron-down.svg"
                   alt=""
                   width={10}
                   height={10}
@@ -59,7 +59,7 @@ export default function Header() {
             aria-label="Search"
           >
             <Image
-              src="/design/red-window-art/vectors/icon-search.svg"
+              src="/design/red-window-art/icon-search.svg"
               alt=""
               width={22}
               height={22}
@@ -71,7 +71,7 @@ export default function Header() {
             aria-label="Account"
           >
             <Image
-              src="/design/red-window-art/vectors/icon-account.svg"
+              src="/design/red-window-art/icon-account.svg"
               alt=""
               width={22}
               height={22}
@@ -84,7 +84,7 @@ export default function Header() {
             aria-label="Cart"
           >
             <Image
-              src="/design/red-window-art/vectors/icon-cart.svg"
+              src="/design/red-window-art/icon-cart.svg"
               alt=""
               width={22}
               height={22}

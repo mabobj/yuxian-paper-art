@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Newsletter() {
   return (
-    <section className="bg-brand-footer relative overflow-hidden" style={{ height: "145px" }}>
+    <section className="bg-brand-footer relative overflow-hidden" style={{ height: "160px" }}>
       <Image
         src="/design/red-window-art/pattern-newsletter-rings.svg"
         alt=""
@@ -12,7 +12,7 @@ export default function Newsletter() {
 
       <div
         className="mx-auto px-6 lg:px-8 h-full flex items-center relative z-10"
-        style={{ maxWidth: "1180px", width: "calc(100% - 48px)" }}
+        style={{ maxWidth: "1200px", width: "calc(100% - 56px)" }}
       >
         <div className="flex flex-col sm:flex-row items-center justify-between w-full gap-4">
           <div className="text-center sm:text-left shrink-0 max-w-lg">

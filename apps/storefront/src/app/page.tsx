@@ -21,7 +21,7 @@ export default function HomePage() {
         <section className="py-12 lg:py-14">
           <Container>
             <SectionTitle
-              title="Shop by Collection"
+              title="Featured Collections"
               className="mb-8"
             />
             <FeaturedCollections />

@@ -9,15 +9,15 @@ const TRUST_ITEMS = [
 
 export default function TrustBar() {
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-10">
       {TRUST_ITEMS.map((item) => (
-        <div key={item.title} className="flex flex-col items-center text-center py-3">
+        <div key={item.title} className="flex flex-col items-center text-center py-4">
           <Image
-            src={`/design/red-window-art/vectors/${item.icon}.svg`}
+            src={`/design/red-window-art/${item.icon}.svg`}
             alt=""
-            width={32}
-            height={32}
-            className="w-8 h-8 mb-3 opacity-60"
+            width={36}
+            height={36}
+            className="w-9 h-9 mb-3 opacity-60"
           />
           <h3 className="font-[family-name:var(--font-heading)] text-[15px] font-semibold text-brand-text">
             {item.title}
