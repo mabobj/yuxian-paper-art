@@ -1,57 +1,18 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export default function CraftStory() {
   return (
     <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-      <div className="relative hidden lg:block">
-        <div className="aspect-[4/3] rounded-[12px] bg-brand-card border border-brand-border overflow-hidden relative">
-          <svg
-            viewBox="0 0 400 300"
-            className="w-full h-full"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <defs>
-              <linearGradient id="craftBg" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#F7F1E5" />
-                <stop offset="100%" stopColor="#E8D8C0" />
-              </linearGradient>
-            </defs>
-            <rect width="400" height="300" fill="url(#craftBg)" />
-
-            <g transform="translate(50,40)">
-              <rect x="0" y="0" width="140" height="180" rx="4" fill="#FFF9EF" stroke="#E7D8C3" strokeWidth="1.5" />
-              <rect x="10" y="10" width="120" height="160" rx="2" fill="#F7F1E5" stroke="#D4C5A9" strokeWidth="0.8" />
-              <g transform="translate(70,90)">
-                <circle cx="0" cy="0" r="30" fill="none" stroke="#9F1D1D" strokeWidth="1" opacity="0.4" />
-                <circle cx="0" cy="0" r="20" fill="none" stroke="#9F1D1D" strokeWidth="0.6" opacity="0.3" />
-                <path d="M-6,-8l4,12l-10,-8h12l-10,8z" fill="none" stroke="#C9A45C" strokeWidth="0.6" opacity="0.5" />
-                <circle cx="0" cy="0" r="2" fill="#B73A2F" opacity="0.3" />
-              </g>
-              <line x1="70" y1="10" x2="70" y2="180" stroke="#E7D8C3" strokeWidth="0.5" opacity="0.4" />
-            </g>
-
-            <g transform="translate(220,50)">
-              <rect x="0" y="0" width="100" height="70" rx="3" fill="#6B3F1D" opacity="0.15" />
-              <line x1="30" y1="0" x2="30" y2="70" stroke="#6B3F1D" strokeWidth="0.3" opacity="0.2" />
-              <line x1="70" y1="0" x2="70" y2="70" stroke="#6B3F1D" strokeWidth="0.3" opacity="0.2" />
-              <path d="M50,30 Q55,25 60,28" stroke="#9F1D1D" strokeWidth="0.8" fill="none" opacity="0.3" />
-              <path d="M50,30 Q45,25 40,28" stroke="#9F1D1D" strokeWidth="0.8" fill="none" opacity="0.3" />
-              <circle cx="50" cy="30" r="1.5" fill="#9F1D1D" opacity="0.3" />
-            </g>
-
-            <g opacity="0.06">
-              <circle cx="360" cy="40" r="60" stroke="#9F1D1D" strokeWidth="1" fill="none" />
-              <circle cx="360" cy="40" r="45" stroke="#9F1D1D" strokeWidth="0.5" fill="none" />
-              <path d="M360,10 Q380,30 360,70" stroke="#9F1D1D" strokeWidth="0.5" fill="none" />
-              <path d="M340,20 Q360,40 340,60" stroke="#9F1D1D" strokeWidth="0.3" fill="none" />
-            </g>
-
-            <g opacity="0.04">
-              <circle cx="30" cy="260" r="50" stroke="#C9A45C" strokeWidth="0.8" fill="none" />
-              <circle cx="30" cy="260" r="38" stroke="#C9A45C" strokeWidth="0.5" fill="none" />
-            </g>
-          </svg>
-        </div>
+      <div className="relative">
+        <Image
+          src="/design/red-window-art/craft-story-banner.png"
+          alt="The art of Yuxian paper cutting — handcraft process"
+          width={800}
+          height={600}
+          className="w-full h-auto rounded-[12px]"
+          sizes="(max-width: 1024px) 100vw, 560px"
+        />
       </div>
 
       <div>

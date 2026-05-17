@@ -1,0 +1,31 @@
+{
+  "brand": {
+    "displayName": "Red Window Art",
+    "tagline": "Chinese Heritage Paper-Cut Art for Home & Gifting"
+  },
+  "colors": {
+    "bg": "#F7F1E5",
+    "sectionAlt": "#F3EEE3",
+    "text": "#171412",
+    "brown": "#3B2A1F",
+    "brandRed": "#9F1D1D",
+    "brandRedAlt": "#B73A2F",
+    "gold": "#C9A45C",
+    "card": "#FFF9EF",
+    "border": "#E7D8C3",
+    "muted": "#6A5A49",
+    "footerRed": "#8F1717",
+    "wood": "#6B3F1D"
+  },
+  "fonts": {
+    "heading": "Georgia, 'Times New Roman', serif",
+    "body": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+  },
+  "layout": {
+    "containerWidth": "1180px",
+    "sectionSpacingDesktop": "56px",
+    "sectionSpacingMobile": "32px",
+    "cardRadius": "12px",
+    "shadowSoft": "0 10px 28px rgba(59,42,31,.08)"
+  }
+}
