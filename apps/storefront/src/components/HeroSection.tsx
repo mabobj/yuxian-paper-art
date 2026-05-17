@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-brand-bg" style={{ height: "337px" }}>
       <div
-        className="mx-auto grid grid-cols-[45%_55%] gap-0 items-center h-full"
+        className="mx-auto grid lg:grid-cols-[45%_55%] gap-0 items-center h-full"
         style={{ width: "1086px", maxWidth: "calc(100% - 48px)" }}
       >
         <div className="relative py-6 pl-2">
@@ -49,7 +49,7 @@ export default function HeroSection() {
 
         <div className="relative h-full hidden lg:block overflow-hidden">
           <Image
-            src="/design/red-window-art/hero-right-scene.png"
+            src="/design/red-window-art/hero-scene.png"
             alt="Red Window Art — paper-cut artwork in a warm modern home setting"
             fill
             className="object-cover"
