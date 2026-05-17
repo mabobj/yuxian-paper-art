@@ -2,10 +2,10 @@ import Link from "next/link"
 import Image from "next/image"
 
 const NAV_LINKS = [
-  { href: "/products", label: "Shop" },
-  { href: "/products", label: "Gifts" },
-  { href: "/products", label: "Home Decor" },
-  { href: "/blessings", label: "Blessings" },
+  { href: "/products", label: "Shop", hasDropdown: true },
+  { href: "/products", label: "Gifts", hasDropdown: true },
+  { href: "/products", label: "Home Decor", hasDropdown: true },
+  { href: "/blessings", label: "Blessings", hasDropdown: true },
   { href: "/story", label: "Our Story" },
   { href: "/journal", label: "Journal" },
 ]
@@ -14,71 +14,85 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white/98 backdrop-blur-sm border-b border-brand-border">
       <div
-        className="mx-auto flex items-center justify-between px-6 lg:px-8 h-[72px]"
-        style={{ maxWidth: "min(1180px, calc(100% - 48px))" }}
+        className="mx-auto flex items-center justify-between h-16"
+        style={{ maxWidth: "1180px", width: "calc(100% - 48px)" }}
       >
-        <Link href="/" className="flex items-center gap-2.5 shrink-0">
+        <Link href="/" className="flex items-center gap-3 shrink-0">
           <Image
             src="/design/red-window-art/vectors/logo-seal-red-window-art.svg"
             alt="Red Window Art"
-            width={36}
-            height={36}
-            className="w-9 h-9"
+            width={40}
+            height={40}
+            className="w-10 h-10"
           />
-          <span className="font-[family-name:var(--font-heading)] text-lg font-semibold tracking-wide text-brand-red">
+          <span
+            className="font-[family-name:var(--font-heading)] text-[26px] font-semibold tracking-tight text-brand-red leading-none"
+          >
             Red Window Art
           </span>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-5 xl:gap-7">
+        <nav className="hidden lg:flex items-center gap-[30px]">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.label}
               href={link.href}
-              className="text-sm tracking-wide text-brand-muted hover:text-brand-text transition-colors"
+              className="text-sm tracking-wide text-brand-muted hover:text-brand-text transition-colors inline-flex items-center gap-1"
             >
               {link.label}
+              {link.hasDropdown && (
+                <Image
+                  src="/design/red-window-art/vectors/icon-chevron-down.svg"
+                  alt=""
+                  width={10}
+                  height={10}
+                  className="w-2.5 h-2.5 opacity-50"
+                />
+              )}
             </Link>
           ))}
         </nav>
 
-        <div className="flex items-center gap-3 shrink-0">
+        <div className="flex items-center gap-4 shrink-0">
           <button
-            className="p-2 text-brand-muted hover:text-brand-text transition-colors"
+            className="p-1.5 text-brand-muted hover:text-brand-text transition-colors"
             aria-label="Search"
           >
             <Image
               src="/design/red-window-art/vectors/icon-search.svg"
               alt=""
-              width={18}
-              height={18}
-              className="w-[18px] h-[18px]"
+              width={22}
+              height={22}
+              className="w-[22px] h-[22px]"
             />
           </button>
           <button
-            className="p-2 text-brand-muted hover:text-brand-text transition-colors"
+            className="p-1.5 text-brand-muted hover:text-brand-text transition-colors"
             aria-label="Account"
           >
             <Image
               src="/design/red-window-art/vectors/icon-account.svg"
               alt=""
-              width={18}
-              height={18}
-              className="w-[18px] h-[18px]"
+              width={22}
+              height={22}
+              className="w-[22px] h-[22px]"
             />
           </button>
           <Link
             href="/cart"
-            className="p-2 text-brand-muted hover:text-brand-text transition-colors"
+            className="p-1.5 text-brand-muted hover:text-brand-text transition-colors relative"
             aria-label="Cart"
           >
             <Image
               src="/design/red-window-art/vectors/icon-cart.svg"
               alt=""
-              width={18}
-              height={18}
-              className="w-[18px] h-[18px]"
+              width={22}
+              height={22}
+              className="w-[22px] h-[22px]"
             />
+            <span className="absolute -top-0.5 -right-0.5 w-4 h-4 flex items-center justify-center rounded-full bg-brand-red text-white text-[9px] font-medium leading-none">
+              2
+            </span>
           </Link>
         </div>
       </div>

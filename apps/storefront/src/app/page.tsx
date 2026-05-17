@@ -18,62 +18,61 @@ export default function HomePage() {
       <main>
         <HeroSection />
 
-        <section className="py-14 lg:py-16">
+        <section className="py-12 lg:py-14">
           <Container>
             <SectionTitle
-              title="Featured Collections"
-              className="mb-10"
+              title="Shop by Collection"
+              className="mb-8"
             />
             <FeaturedCollections />
           </Container>
         </section>
 
-        <section className="py-14 lg:py-16 bg-brand-card">
+        <section className="py-12 lg:py-14 bg-brand-card">
           <Container>
             <SectionTitle
               title="Choose by Meaning"
               subtitle="Every artwork carries a cultural blessing. Find the piece that speaks to what matters most."
-              className="mb-10"
+              className="mb-8"
             />
             <MeaningGrid />
           </Container>
         </section>
 
-        <section className="py-14 lg:py-16">
+        <section className="py-12 lg:py-14">
           <Container>
-            <SectionTitle
-              title="The Art of Yuxian Paper Cutting"
-              subtitle="A living heritage craft with over 500 years of tradition, recognized by UNESCO as an Intangible Cultural Heritage of Humanity."
-              className="mb-10"
-            />
             <CraftStory />
           </Container>
         </section>
 
-        <section className="py-14 lg:py-16 bg-brand-card">
+        <section className="py-12 lg:py-14 bg-brand-card">
           <Container>
             <SectionTitle
               title="Meaningful Chinese Gifts"
               subtitle="Every occasion deserves a gift with cultural depth, beauty, and a story worth sharing."
-              className="mb-10"
+              className="mb-8"
             />
             <GiftScenarios />
           </Container>
         </section>
 
-        <section className="py-14 lg:py-16">
+        <section className="py-12 lg:py-14">
           <Container>
             <SectionTitle
               title="Featured Artworks"
               subtitle="Hand-cut, professionally framed, and ready to transform your space."
-              className="mb-10"
+              className="mb-8"
             />
             <ArtworkGrid />
           </Container>
         </section>
 
-        <section className="py-12 lg:py-14 bg-brand-card border-y border-brand-border">
+        <section className="py-10 lg:py-12 bg-brand-card border-y border-brand-border">
           <Container>
+            <SectionTitle
+              title="You're in Good Hands"
+              className="mb-7"
+            />
             <TrustBar />
           </Container>
         </section>
