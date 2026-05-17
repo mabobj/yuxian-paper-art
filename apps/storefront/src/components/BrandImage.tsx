@@ -1,33 +1,33 @@
 import Image from "next/image"
 
-type BrandImageProps = {
+type Props = {
   src: string
   alt: string
-  priority?: boolean
-  sizes?: string
   className?: string
   imageClassName?: string
+  sizes?: string
+  priority?: boolean
   objectPosition?: string
 }
 
 export default function BrandImage({
   src,
   alt,
-  priority = false,
-  sizes = "(min-width: 1024px) 25vw, 100vw",
   className = "",
   imageClassName = "",
-  objectPosition = "center",
-}: BrandImageProps) {
+  sizes = "(min-width: 1024px) 25vw, 100vw",
+  priority = false,
+  objectPosition = "center"
+}: Props) {
   return (
-    <div className={`relative overflow-hidden bg-brand-card ${className}`}>
+    <div className={`relative overflow-hidden ${className}`}>
       <Image
         src={src}
         alt={alt}
         fill
-        priority={priority}
         sizes={sizes}
-        className={`h-full w-full object-cover ${imageClassName}`}
+        priority={priority}
+        className={`object-cover ${imageClassName}`}
         style={{ objectPosition }}
       />
     </div>

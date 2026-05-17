@@ -14,8 +14,8 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white/98 backdrop-blur-sm border-b border-brand-border">
       <div
-        className="mx-auto flex items-center justify-between h-16"
-        style={{ maxWidth: "1200px", width: "calc(100% - 56px)" }}
+        className="mx-auto flex items-center justify-between"
+        style={{ width: "1086px", maxWidth: "calc(100% - 48px)", height: "78px" }}
       >
         <Link href="/" className="flex items-center gap-3 shrink-0">
           <Image
@@ -25,9 +25,7 @@ export default function Header() {
             height={40}
             className="w-10 h-10"
           />
-          <span
-            className="font-[family-name:var(--font-heading)] text-[26px] font-semibold tracking-tight text-brand-red leading-none"
-          >
+          <span className="font-[family-name:var(--font-heading)] text-[26px] font-semibold tracking-tight text-brand-red leading-none">
             Red Window Art
           </span>
         </Link>
@@ -54,10 +52,7 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-4 shrink-0">
-          <button
-            className="p-1.5 text-brand-muted hover:text-brand-text transition-colors"
-            aria-label="Search"
-          >
+          <button className="p-1.5 text-brand-muted hover:text-brand-text transition-colors" aria-label="Search">
             <Image
               src="/design/red-window-art/icon-search.svg"
               alt=""
@@ -66,10 +61,7 @@ export default function Header() {
               className="w-[22px] h-[22px]"
             />
           </button>
-          <button
-            className="p-1.5 text-brand-muted hover:text-brand-text transition-colors"
-            aria-label="Account"
-          >
+          <button className="p-1.5 text-brand-muted hover:text-brand-text transition-colors" aria-label="Account">
             <Image
               src="/design/red-window-art/icon-account.svg"
               alt=""
@@ -78,11 +70,7 @@ export default function Header() {
               className="w-[22px] h-[22px]"
             />
           </button>
-          <Link
-            href="/cart"
-            className="p-1.5 text-brand-muted hover:text-brand-text transition-colors relative"
-            aria-label="Cart"
-          >
+          <Link href="/cart" className="p-1.5 text-brand-muted hover:text-brand-text transition-colors relative" aria-label="Cart">
             <Image
               src="/design/red-window-art/icon-cart.svg"
               alt=""

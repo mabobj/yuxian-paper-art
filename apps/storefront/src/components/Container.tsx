@@ -8,8 +8,8 @@ type ContainerProps = {
 export default function Container({ children, className = "" }: ContainerProps) {
   return (
     <div
-      className={`mx-auto px-6 lg:px-8 ${className}`}
-      style={{ maxWidth: "1200px", width: "calc(100% - 56px)" }}
+      className={`mx-auto ${className}`}
+      style={{ width: "1086px", maxWidth: "calc(100% - 48px)" }}
     >
       {children}
     </div>

@@ -10,33 +10,33 @@ const GIFTS = [
 
 export default function GiftScenarios() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-[18px]">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
       {GIFTS.map((gift) => (
         <Link
           key={gift.title}
           href={gift.href}
-          className="group flex flex-col rounded-[8px] border border-brand-border bg-brand-card overflow-hidden shadow-[0_8px_24px_rgba(59,42,31,0.07)] hover:-translate-y-0.5 transition-all duration-300"
+          className="group flex flex-col rounded-[8px] border border-brand-border bg-brand-card overflow-hidden shadow-[0_4px_12px_rgba(59,42,31,0.05)] hover:-translate-y-0.5 transition-all duration-300"
         >
           <BrandImage
             src={`/design/red-window-art/${gift.image}`}
             alt={gift.title}
-            className="h-[140px]"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 33vw, 380px"
+            className="h-[53px]"
+            sizes="(max-width: 768px) 100vw, 355px"
             imageClassName="group-hover:scale-105 transition-transform duration-500"
           />
-          <div className="flex items-center justify-between px-5 h-[44px]">
+          <div className="flex items-center justify-between px-4 h-[42px]">
             <div>
-              <h3 className="font-[family-name:var(--font-heading)] text-base font-semibold text-brand-text group-hover:text-brand-red transition-colors leading-tight">
+              <h3 className="font-[family-name:var(--font-heading)] text-sm font-semibold text-brand-text group-hover:text-brand-red transition-colors leading-tight">
                 {gift.title}
               </h3>
-              <p className="text-xs text-brand-muted">{gift.subtitle}</p>
+              <p className="text-[11px] text-brand-muted">{gift.subtitle}</p>
             </div>
             <Image
               src="/design/red-window-art/icon-arrow-right.svg"
               alt=""
               width={14}
               height={14}
-              className="w-3.5 h-3.5 opacity-40 group-hover:opacity-70 transition-opacity shrink-0 ml-3"
+              className="w-3.5 h-3.5 opacity-40 group-hover:opacity-70 transition-opacity shrink-0 ml-2"
             />
           </div>
         </Link>
